@@ -1,11 +1,11 @@
 class Person
-    def initialize (name,account=25,happiness=8,hygiene=8)
+    def initialize (name,bank_account=25,happiness=8,hygiene=8)
         @name = name
-        @account =account
+        @bank_account =bank_account
         @happiness=happiness
         @hygiene=hygiene
 
-    attr_accessor:account
+    attr_accessor:bank_account
     attr_accessor:happiness
     attr_accessor:hygiene
 
@@ -17,7 +17,7 @@ class Person
     end
 
     def get_paid(salary)
-        @account+=salary
+        @bank_account+=salary
         return "all about the benjamins"
     end
     def take_bath
