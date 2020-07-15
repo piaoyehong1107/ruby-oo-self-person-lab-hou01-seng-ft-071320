@@ -4,6 +4,11 @@ class Person
         @bank_account =bank_account
         @happiness=happiness
         @hygiene=hygiene
+    end
+    
+    def name
+        @name
+    end
 
     attr_accessor:bank_account
     attr_accessor:happiness
@@ -34,4 +39,3 @@ class Person
     end
 
 end
-
